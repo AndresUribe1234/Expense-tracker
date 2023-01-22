@@ -6,10 +6,10 @@ function ExpenseDate(props) {
   const dayDate = props.date.getDate();
 
   return (
-    <div>
-      <div>{monthDate}</div>
-      <div>{yearDate}</div>
-      <div>{dayDate}</div>
+    <div className="expense-date">
+      <div className="expense-date__month">{monthDate}</div>
+      <div className="expense-date__year">{yearDate}</div>
+      <div className="expense-date__day">{dayDate}</div>
     </div>
   );
 }
